@@ -224,7 +224,7 @@ This extension runs **entirely on your local machine**:
 
 Contributions, issues, and feature requests are welcome!
 
-1. Fork the [repository](https://github.com/jcendal/md-mermaid-pdf)
+1. Fork the [repository](https://github.com/jcendal/ai-markdown-to-pdf)
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
 3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)

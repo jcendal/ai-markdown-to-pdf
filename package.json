@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcendal/md-mermaid-pdf"
+    "url": "https://github.com/jcendal/ai-markdown-to-pdf"
   },
   "engines": {
     "vscode": "^1.85.0"
