@@ -3,7 +3,7 @@
   "displayName": "AI Markdown to PDF",
   "description": "Convert AI-generated Markdown files to polished PDFs with Mermaid diagrams rendered as real SVG graphics. Perfect for Cursor, Copilot, and ChatGPT plans.",
   "version": "1.0.0",
-  "publisher": "jorgecendal",
+  "publisher": "jcendal",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -149,6 +149,7 @@
     "watch": "node esbuild.mjs --watch",
     "package": "npx @vscode/vsce package --no-dependencies",
     "publish:openvsx": "npx ovsx publish *.vsix",
+    "semantic-release": "semantic-release",
     "vscode:prepublish": "npm run build"
   },
   "dependencies": {
@@ -156,10 +157,15 @@
     "puppeteer-core": "^24.0.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/vscode": "^1.85.0",
     "@vscode/vsce": "^3.0.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
     "esbuild": "^0.24.0",
     "ovsx": "^0.10.0",
+    "semantic-release": "^24.0.0",
+    "semantic-release-vsce": "^5.7.0",
     "typescript": "^5.4.0"
   }
 }
