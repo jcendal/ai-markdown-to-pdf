@@ -4,9 +4,9 @@
 
 **Convert AI-generated Markdown files to polished PDFs — with diagrams rendered as real SVG graphics**
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/jorgecendal.ai-markdown-to-pdf?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=jorgecendal.ai-markdown-to-pdf)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/jorgecendal.ai-markdown-to-pdf?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jorgecendal.ai-markdown-to-pdf)
-[![Rating](https://img.shields.io/visual-studio-marketplace/r/jorgecendal.ai-markdown-to-pdf?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jorgecendal.ai-markdown-to-pdf)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/jcendal.ai-markdown-to-pdf?style=flat-square&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=jcendal.ai-markdown-to-pdf)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/jcendal.ai-markdown-to-pdf?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jcendal.ai-markdown-to-pdf)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/jcendal.ai-markdown-to-pdf?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=jcendal.ai-markdown-to-pdf)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) •
@@ -56,7 +56,7 @@ before printing, so your AI-generated documents look professional in PDF form.
 Open VS Code / Cursor, launch Quick Open (`Ctrl+P` / `Cmd+P`), and run:
 
 ```
-ext install jorgecendal.ai-markdown-to-pdf
+ext install jcendal.ai-markdown-to-pdf
 ```
 
 Or search for **AI Markdown to PDF** in the Extensions sidebar.

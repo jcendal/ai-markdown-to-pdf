@@ -3,7 +3,7 @@
   "displayName": "AI Markdown to PDF",
   "description": "Convert AI-generated Markdown files to polished PDFs with Mermaid diagrams rendered as real SVG graphics. Perfect for Cursor, Copilot, and ChatGPT plans.",
   "version": "1.0.0",
-  "publisher": "jorgecendal",
+  "publisher": "jcendal",
   "license": "MIT",
   "repository": {
     "type": "git",
