@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.1...v1.0.2) (2026-08-04)
+
+### Bug Fixes
+
+* **ci:** skip publish steps when no .vsix is generated ([e4fc844](https://github.com/jcendal/ai-markdown-to-pdf/commit/e4fc844c02c62b9bf768c7f7e18c715aa96d6934))
+
 ## [1.0.1](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.0...v1.0.1) (2026-08-04)
 
 ### Bug Fixes
