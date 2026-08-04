@@ -1,3 +1,11 @@
+## 1.0.0 (2026-08-04)
+
+### Bug Fixes
+
+* allow semantic-release to push version and changelog back to repo ([dae17ab](https://github.com/jcendal/ai-markdown-to-pdf/commit/dae17ab2d8f186c1c030bc3d7135917b43634ac0))
+* decouple marketplace publish from semantic-release ([e53e60b](https://github.com/jcendal/ai-markdown-to-pdf/commit/e53e60b62b5a01f055db000e29ab0845cd11a6db))
+* update repository URL to match GitHub repo name ([6c30a87](https://github.com/jcendal/ai-markdown-to-pdf/commit/6c30a875fae40c7d48955ee459f2dd08f03fa1df))
+
 # Changelog
 
 ## 1.0.0
