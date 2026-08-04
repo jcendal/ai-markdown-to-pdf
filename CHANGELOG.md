@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.0...v1.0.1) (2026-08-04)
+
+### Bug Fixes
+
+* use job-level env vars for secret availability checks ([44b05e0](https://github.com/jcendal/ai-markdown-to-pdf/commit/44b05e0c0a16c04826e76e42d9c130b940ef465b))
+
 ## 1.0.0 (2026-08-04)
 
 ### Bug Fixes
