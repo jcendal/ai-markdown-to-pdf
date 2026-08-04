@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.2...v1.0.3) (2026-08-04)
+
+### Bug Fixes
+
+* **ci:** create Open VSX namespace before publishing ([b9b5101](https://github.com/jcendal/ai-markdown-to-pdf/commit/b9b51014907068388f16220e762febb0e1cc897b))
+
 ## [1.0.2](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.1...v1.0.2) (2026-08-04)
 
 ### Bug Fixes
