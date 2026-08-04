@@ -38,8 +38,7 @@
     [
       "semantic-release-vsce",
       {
-        "packageVsix": true,
-        "publishPackagePath": "*.vsix"
+        "packageVsix": true
       }
     ],
     [
