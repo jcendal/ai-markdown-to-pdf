@@ -47,6 +47,12 @@ jobs:
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
 
+      - name: Create Open VSX namespace
+        if: steps.vsix.outputs.exists == 'true' && env.HAS_OVSX_PAT == 'true'
+        run: npx ovsx create-namespace jcendal -p "$OVSX_PAT" || true
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+
       - name: Publish to Open VSX
         if: steps.vsix.outputs.exists == 'true' && env.HAS_OVSX_PAT == 'true'
         run: npx ovsx publish *.vsix -p "$OVSX_PAT"
