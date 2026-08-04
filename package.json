@@ -1,0 +1,165 @@
+{
+  "name": "ai-markdown-to-pdf",
+  "displayName": "AI Markdown to PDF",
+  "description": "Convert AI-generated Markdown files to polished PDFs with Mermaid diagrams rendered as real SVG graphics. Perfect for Cursor, Copilot, and ChatGPT plans.",
+  "version": "1.0.0",
+  "publisher": "jorgecendal",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcendal/md-mermaid-pdf"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
+  "keywords": [
+    "markdown",
+    "pdf",
+    "ai",
+    "cursor",
+    "mermaid",
+    "export",
+    "diagram",
+    "converter",
+    "copilot",
+    "chatgpt"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1a1a2e",
+    "theme": "dark"
+  },
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiMarkdownToPdf.exportToPdf",
+        "title": "AI Markdown: Export to PDF"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "aiMarkdownToPdf.exportToPdf",
+          "when": "resourceLangId == markdown",
+          "group": "aiMarkdownToPdf@1"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "aiMarkdownToPdf.exportToPdf",
+          "when": "resourceLangId == markdown",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "aiMarkdownToPdf.exportToPdf",
+          "when": "resourceExtname == .md",
+          "group": "aiMarkdownToPdf@1"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "AI Markdown to PDF",
+      "properties": {
+        "aiMarkdownToPdf.chromePath": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to Chrome/Chromium executable. Auto-detected if empty."
+        },
+        "aiMarkdownToPdf.pageSize": {
+          "type": "string",
+          "default": "A4",
+          "enum": [
+            "A4",
+            "Letter",
+            "Legal",
+            "A3",
+            "A5",
+            "Tabloid"
+          ],
+          "description": "PDF page size."
+        },
+        "aiMarkdownToPdf.orientation": {
+          "type": "string",
+          "default": "portrait",
+          "enum": [
+            "portrait",
+            "landscape"
+          ],
+          "description": "PDF page orientation."
+        },
+        "aiMarkdownToPdf.margins": {
+          "type": "object",
+          "default": {
+            "top": "18mm",
+            "bottom": "18mm",
+            "left": "15mm",
+            "right": "15mm"
+          },
+          "description": "PDF page margins (top, bottom, left, right).",
+          "properties": {
+            "top": {
+              "type": "string"
+            },
+            "bottom": {
+              "type": "string"
+            },
+            "left": {
+              "type": "string"
+            },
+            "right": {
+              "type": "string"
+            }
+          }
+        },
+        "aiMarkdownToPdf.fontSize": {
+          "type": "number",
+          "default": 13,
+          "description": "Base font size in pixels."
+        },
+        "aiMarkdownToPdf.mermaidWaitMs": {
+          "type": "number",
+          "default": 4000,
+          "minimum": 1000,
+          "maximum": 30000,
+          "description": "Milliseconds to wait for Mermaid diagrams to render before generating PDF."
+        },
+        "aiMarkdownToPdf.showPageNumbers": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show page numbers in the PDF footer."
+        },
+        "aiMarkdownToPdf.openAfterExport": {
+          "type": "boolean",
+          "default": true,
+          "description": "Open the PDF in the default viewer after export."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "package": "npx @vscode/vsce package --no-dependencies",
+    "publish:openvsx": "npx ovsx publish *.vsix",
+    "vscode:prepublish": "npm run build"
+  },
+  "dependencies": {
+    "marked": "^14.0.0",
+    "puppeteer-core": "^24.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.0.0",
+    "esbuild": "^0.24.0",
+    "ovsx": "^0.10.0",
+    "typescript": "^5.4.0"
+  }
+}
