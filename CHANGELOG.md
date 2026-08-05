@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.3...v1.0.4) (2026-08-05)
+
+### Bug Fixes
+
+* trigger release for VS Code Marketplace publication ([0e99ecb](https://github.com/jcendal/ai-markdown-to-pdf/commit/0e99ecb5f745f0b6ec346ffb45087de22cddbb24))
+
 ## [1.0.3](https://github.com/jcendal/ai-markdown-to-pdf/compare/v1.0.2...v1.0.3) (2026-08-04)
 
 ### Bug Fixes
